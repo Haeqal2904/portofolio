@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haeqal Hasan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-brand">HH</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Haeqal Hasan</h1>
+            <div class="role">AI & Data Science Developer</div>
+            <p>Mahasiswa Teknik Informatika semester 6 dengan fokus pada Artificial Intelligence, Machine Learning, dan Data Analysis. Berpengalaman dalam pengembangan model deteksi, analisis sentimen, dan full-stack web development.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Hubungi Saya</button>
+                <a href="#projects" class="btn btn-secondary">Lihat Proyek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Developer & Student</h3>
+                <p>Saya adalah seorang mahasiswa Teknik Informatika di Universitas Esa Unggul yang passionate tentang AI dan Data Science. Dengan IPK 3.58/4.00, saya terus mengembangkan skill dalam machine learning, data mining, dan web development.</p>
+                <p>Fokus saya saat ini adalah mengintegrasikan AI ke dalam aplikasi praktis yang dapat memecahkan masalah nyata. Saya percaya bahwa teknologi harus digunakan untuk membuat perbedaan positif.</p>
+                <div class="about-highlights">
+                    <div class="highlight">📚 Semester 6 - Teknik Informatika</div>
+                    <div class="highlight">📊 Fokus: AI & Data Mining</div>
+                    <div class="highlight">🎯 IPK: 3.58/4.00</div>
+                    <div class="highlight">🏙️ Jakarta, Indonesia</div>
+                </div>
+            </div>
+            <div class="about-img"><img src="WhatsApp Image 2026-09-08 at 19.06.57 (1).jpeg" alt="Foto Pribadi" class="personal-photo" /></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Proyek & Pengalaman</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>🎥 Deteksi Mata Uang YOLOv11</h3>
+                <div class="project-period">September 2025 – Januari 2026</div>
+                <p>Mengembangkan sistem deteksi mata uang Rupiah menggunakan model YOLOv11. Melakukan preprocessing dataset, training model, dan evaluasi performa menggunakan Precision, Recall, dan mAP.</p>
+                <div class="tech-tags">
+                    <span class="tag">YOLOv11</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Google Colab</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3> Analisis Sentimen Green SM</h3>
+                <div class="project-period">Maret 2025 – Agustus 2025</div>
+                <p>Analisis sentimen dan pemetaan data terkait Green SM (ride-hailing) menggunakan Data Mining dan Text Mining. Melakukan preprocessing, klasifikasi sentimen, dan visualisasi distribusi berdasarkan lokasi di Jakarta.</p>
+                <div class="tech-tags">
+                    <span class="tag">Text Mining</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">GIS Mapping</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3> Analisis Sentimen Shopee Reviews</h3>
+                <div class="project-period">Maret 2025 – Agustus 2025</div>
+                <p>Pengolahan dan analisis data ulasan aplikasi Shopee untuk mengidentifikasi sentimen pengguna. Implementasi Text Mining untuk klasifikasi sentimen positif, negatif, dan netral dengan visualisasi hasil.</p>
+                <div class="tech-tags">
+                    <span class="tag">Sentiment Analysis</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">Data Visualization</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3> Sistem Pengaduan Masyarakat</h3>
+                <div class="project-period">Maret 2025 – Agustus 2025</div>
+                <p>Mengembangkan aplikasi web lengkap untuk pengelolaan pengaduan masyarakat. Merancang UI responsif, mengintegrasikan frontend dengan backend, dan mengimplementasikan fitur pengelolaan status laporan.</p>
+                <div class="tech-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Backend</span>
+                    <span class="tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Photo Section (replaces gallery) -->
+    <section class="personal-photo-section" id="personal-photo">
+        <h2>Foto Pribadi</h2>
+        <div class="personal-photo-frame">
+            <img src="WhatsApp Image 2026-09-08 at 19.06.57 (1).jpeg" alt="Foto Pribadi" class="personal-photo" />
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Keahlian</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Hard Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">Tailwind CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Figma</span>
+                    <span class="skill-badge">Google Colab</span>
+                    <span class="skill-badge">MS Office</span>
+                    <span class="skill-badge">Google Workspace</span>
+                    <span class="skill-badge">Canva</span>
+                    <span class="skill-badge">YOLOv11</span>
+                    <span class="skill-badge">Data Mining</span>
+                    <span class="skill-badge">NLP</span>
+                    <span class="skill-badge">Machine Learning</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">Problem Solving</span>
+                    <span class="skill-badge">Time Management</span>
+                    <span class="skill-badge">Analytical Thinking</span>
+                    <span class="skill-badge">Communication</span>
+                    <span class="skill-badge">Teamwork</span>
+                    <span class="skill-badge">Research</span>
+                    <span class="skill-badge">Critical Thinking</span>
+                    <span class="skill-badge">Documentation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2>Pendidikan</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <h3>Teknik Informatika</h3>
+                <p><strong>Universitas Esa Unggul</strong></p>
+                <div class="education-period">September 2023 – Sekarang (Semester 6)</div>
+                <div class="gpa">IPK: 3.58 / 4.00</div>
+                <p style="margin-top: 1rem; font-size: 0.95rem; opacity: 0.7;">Fokus: Artificial Intelligence, Machine Learning, Data Mining, Web Development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Hubungi Saya</h2>
+        <div class="contact-content">
+            <p>Tertarik untuk berkolaborasi atau memiliki pertanyaan? Silakan hubungi saya melalui saluran berikut.</p>
+            <div class="contact-links">
+                <a href="mailto:haeqal@email.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://instagram.com" class="contact-link"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group"><label for="name">Nama</label><input type="text" id="name" name="name" required></div>
+                <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+                <div class="form-group"><label for="message">Pesan</label><textarea id="message" name="message" required></textarea></div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Haeqal Hasan. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
